@@ -1,6 +1,6 @@
 function buildlist() {
 
-    d3.json("samples.json").then((incomingData) => {
+    d3.json("static/data/samples.json").then((incomingData) => {
         
         var names = incomingData.names
     
@@ -29,7 +29,7 @@ function optionChanged(val) {
   }
 
 function buildbar(val) {
-  d3.json("samples.json").then((incomingData) => {
+  d3.json("static/data/samples.json").then((incomingData) => {
     
     var samples = incomingData.samples
     // samples.forEach(x => console.log(x))
@@ -74,7 +74,7 @@ function buildbar(val) {
 }
 
 function buildbubble(val) {
-    d3.json("samples.json").then((incomingData) => {
+    d3.json("static/data/samples.json").then((incomingData) => {
       
       var samples = incomingData.samples
       // samples.forEach(x => console.log(x))
@@ -124,7 +124,7 @@ function buildbubble(val) {
   }
 
   function buildinfo(val) {
-    d3.json("samples.json").then((incomingData) => {
+    d3.json("static/data/samples.json").then((incomingData) => {
       
       var metadata = incomingData.metadata
       //console.log(metadata);
